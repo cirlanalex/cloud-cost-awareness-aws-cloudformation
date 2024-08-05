@@ -1,0 +1,11 @@
+mariadb==1.1.10
+python-decouple==3.8
+GitPython==3.1.43
+python-decouple==3.8
+ruamel_yaml==0.18.6
+pyjson==1.4.1
+PyGithub==2.3.0
+pandas==2.2.2
+matplotlib==3.9.0
+seaborn==0.13.2
+upsetplot==0.9.0

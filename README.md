@@ -77,13 +77,23 @@ Running script:
 >1. [full_database.sql](EXTRA/full_database.sql) | The database that is used for the majority of scripts inside this folder
 >2. [extract_dataset_json_from_database](EXTRA/extract_dataset_json_from_database) | Generate the file dataset.json from the database
 >    1. [.env.example](EXTRA/extract_dataset_json_from_database/.env.example) | rename to ".env" and complete with the database details and the GitHub Token
->3. [compute_consensus_level](EXTRA/compute_consensus_level) | Compute the consensus level between each team member before consolidation and after consolidation
->    1. [alpha.txt](EXTRA/compute_consensus_level/alpha.txt) | You can see the results in this file
->    2. [.env.example](EXTRA/compute_consensus_level/.env.example) | rename to ".env" and complete with the database details
->4. [generate_plots](EXTRA/generate_plots) | You can generate all plots used in the paper(AWS CF Frequency Plot + AWS CF UpSet Plot + AWS CF vs Terraform Frequency Plots + AWS CF vs Terraform UpSet Plots)
+>    2. [output](EXTRA/extract_dataset_json_from_database/output/) | [dataset.json](EXTRA/extract_dataset_json_from_database/output/dataset.json) file is generated in this folder
+>3. [generate_plots](EXTRA/generate_plots) | You can generate all plots used in the paper(AWS CF Frequency Plot + AWS CF UpSet Plot + AWS CF vs Terraform Frequency Plots + AWS CF vs Terraform UpSet Plots)
 >    1. [.env.example](EXTRA/generate_plots/.env.example) | rename to ".env" and complete with the database details
->    2. [dataset.json](EXTRA/generate_plots/usage/dataset.json) | the Terraform dataset of commits only
->5. [notes.md](EXTRA/notes.md) | Notes about the older version of labels
+>    2. [dataset.json](EXTRA/generate_plots/script/src/usage/dataset.json) | the Terraform dataset of commits only
+>    3. [output](EXTRA/generate_plots/output/) | all figures are generated in this folder
+>4. [compute_consensus_level](EXTRA/compute_consensus_level) | Compute the consensus level between each team member before consolidation and after consolidation
+>    1. [.env.example](EXTRA/compute_consensus_level/.env.example) | rename to ".env" and complete with the database details
+>    2. [output](EXTRA/compute_consensus_level/output/) | [alpha.txt](EXTRA/compute_consensus_level/output/alpha.txt) is generated in this folder to see the results
+>5. [notes.md](EXTRA/notes.md) | Notes about the older version of labels used for consensus level
+
+Running script:
+> 1. Install [Docker Engine](https://docs.docker.com/engine/install/)
+> 2. In the terminal/cmd
+>    1. Navigate to the folder of the script `EXTRA/theScript`
+>    2. Rename **`.env.example`** to **`.env`**
+>    3. Change the GitHub token from **`.env`** (if needed)
+>    4. Run `docker compose up`
 
 ### **`dataset.json`**
 

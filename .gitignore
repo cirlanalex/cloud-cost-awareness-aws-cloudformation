@@ -1,5 +1,5 @@
-/scripts/data-collection/src/usage/logger/logs
-/scripts/data/db
 **/.env
 **/.DS_Store
 **/__pycache__
+**/data/db
+**/usage/logger/logs

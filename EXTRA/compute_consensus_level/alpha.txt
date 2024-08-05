@@ -1,6 +1,0 @@
-Alpha between allia and alex in 237 commits computed before consolidation is 0.787247
-Alpha between allia and alex in 237 commits computed after consolidation is 0.963656
-Alpha between alex and nicu in 250 commits computed before consolidation is 0.661055
-Alpha between alex and nicu in 250 commits computed after consolidation is 0.887695
-Alpha between allia and nicu in 244 commits computed before consolidation is 0.643727
-Alpha between allia and nicu in 244 commits computed after consolidation is 0.928990
