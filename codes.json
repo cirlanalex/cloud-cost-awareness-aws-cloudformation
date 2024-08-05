@@ -94,5 +94,9 @@
   {
     "name": "vpn",
     "description": "denotes messages explicitly related to VPN configurations."
+  },
+  {
+    "name": "unrelated",
+    "description": "denotes messages that are not related to cost management."
   }
 ]

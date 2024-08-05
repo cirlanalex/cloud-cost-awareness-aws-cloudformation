@@ -147,7 +147,7 @@ Running script:
 
 - **Content**: Description of the codes identified during the study.
 - **Format**: List of entries in JSON.
-- **Size**: 24 entries.
+- **Size**: 25 entries.
 - **Collection period**: May 2024.
 - **Entry fields** ([JSON Schema](https://json-schema.org/)):
   ```json
