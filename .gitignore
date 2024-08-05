@@ -1,7 +1,5 @@
-/scripts/.env
 /scripts/data-collection/src/usage/logger/logs
 /scripts/data/db
-/scripts/data-collection/.DS_Store
-*/.env
-*/.DS_Store
-*/__pycache__
+**/.env
+**/.DS_Store
+**/__pycache__
