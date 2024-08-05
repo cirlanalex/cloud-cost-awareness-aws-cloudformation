@@ -10,12 +10,9 @@ if __name__ == '__main__':
     instance = Initialization(logger)
     github = GhAuth(logger)
 
-    # FIRST PLOT
     effects = [(1, "awareness"), (2, "increase"), (3, "save"), (4, "unrelated")]
     actions = [(1, "change"), (2, "test"), (3, "track")]
     properties = [(1, "alert"), (2, "area"), (3, "billing_mode"), (4, "cluster"), (5, "cpu"), (6, "domain"), (7, "feature"), (8, "instance"), (9, "logging"), (10, "nat"), (11, "networking"), (12, "policy"), (13, "provider"), (14, "ram"), (15, "report"), (16, "service"), (17, "storage"), (18, "vpn")]
-
-    # SECOND PLOT (UpSet plot)
 
     results = []
 

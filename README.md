@@ -76,15 +76,26 @@ Running script:
 
 >1. [full_database.sql](EXTRA/full_database.sql) | The database that is used for the majority of scripts inside this folder
 >2. [extract_dataset_json_from_database](EXTRA/extract_dataset_json_from_database) | Generate the file dataset.json from the database
->    1. [.env.example](EXTRA/extract_dataset_json_from_database/.env.example) | rename to ".env" and complete with the database details and the GitHub Token
+>    1. [.env.example](EXTRA/extract_dataset_json_from_database/.env.example) | Rename to ".env" and complete with the database details and the GitHub Token
 >    2. [output](EXTRA/extract_dataset_json_from_database/output/) | [dataset.json](EXTRA/extract_dataset_json_from_database/output/dataset.json) file is generated in this folder
 >3. [generate_plots](EXTRA/generate_plots) | You can generate all plots used in the paper(AWS CF Frequency Plot + AWS CF UpSet Plot + AWS CF vs Terraform Frequency Plots + AWS CF vs Terraform UpSet Plots)
->    1. [.env.example](EXTRA/generate_plots/.env.example) | rename to ".env" and complete with the database details
->    2. [dataset.json](EXTRA/generate_plots/script/src/usage/dataset.json) | the Terraform dataset of commits only
->    3. [output](EXTRA/generate_plots/output/) | all figures are generated in this folder
+>    1. [.env.example](EXTRA/generate_plots/.env.example) | Rename to ".env" and complete with the database details
+>    2. [dataset.json](EXTRA/generate_plots/script/src/usage/dataset.json) | The Terraform dataset of commits only
+>    3. [output](EXTRA/generate_plots/output) | All figures are generated in this folder
 >4. [compute_consensus_level](EXTRA/compute_consensus_level) | Compute the consensus level between each team member before consolidation and after consolidation
->    1. [.env.example](EXTRA/compute_consensus_level/.env.example) | rename to ".env" and complete with the database details
->    2. [output](EXTRA/compute_consensus_level/output/) | [alpha.txt](EXTRA/compute_consensus_level/output/alpha.txt) is generated in this folder to see the results
+>    1. [.env.example](EXTRA/compute_consensus_level/.env.example) | Rename to ".env" and complete with the database details
+>    2. [output](EXTRA/compute_consensus_level/output) | [alpha.txt](EXTRA/compute_consensus_level/output/alpha.txt) is generated in this folder to see the results
+>5. [generate_labels_for_each_team_member](EXTRA/generate_labels_for_each_team_member) | Generate the datasets from the database for each team member before and after consolidation
+>    1. [.env.example](EXTRA/generate_labels_for_each_team_member/.env.example) | Rename to ".env" and complete with the database details and the GitHub Token
+>    2. [output](EXTRA/generate_labels_for_each_team_member/output) | Generates the datasets labelled by each team member
+>        1. [before_consolidation](EXTRA/generate_labels_for_each_team_member/output/before_consolidation) | Commits labelled before consolidation
+>            - [alex.json](EXTRA/generate_labels_for_each_team_member/output/before_consolidation/alex.json) | Commits labelled by Alex before consolidation
+>            - [allia.json](EXTRA/generate_labels_for_each_team_member/output/before_consolidation/allia.json) | Commits labelled by Allia before consolidation
+>            - [nicu.json](EXTRA/generate_labels_for_each_team_member/output/before_consolidation/nicu.json) | Commits labelled by Nicu before consolidation
+>        1. [after_consolidation](EXTRA/generate_labels_for_each_team_member/output/after_consolidation) | Commits labelled after consolidation
+>            - [alex.json](EXTRA/generate_labels_for_each_team_member/output/after_consolidation/alex.json) | Commits labelled by Alex after consolidation
+>            - [allia.json](EXTRA/generate_labels_for_each_team_member/output/after_consolidation/allia.json) | Commits labelled by Allia after consolidation
+>            - [nicu.json](EXTRA/generate_labels_for_each_team_member/output/after_consolidation/nicu.json) | Commits labelled by Nicu after consolidation
 >5. [notes.md](EXTRA/notes.md) | Notes about the older version of labels used for consensus level
 
 Running script:

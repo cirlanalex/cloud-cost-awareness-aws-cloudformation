@@ -54,12 +54,6 @@ for table in tables:
         data2P2 = extractDataFromDB(lowerLimitP2, upperLimitP2, table2)
         data1 = data1P1 + data1P2
         data2 = data2P1 + data2P2
-        # save data to json pretty print
-        # with open('{table1}_{table2}_{type}.json', 'w') as f:
-        #     json.dump(data1, f, indent=4)
-        # with open('data2.json', 'w') as f:
-        #     json.dump(data2, f, indent=4)
-        # assert len(data1) == len(data2)
 
         data = []
         for (a, b) in zip(data1, data2):
@@ -73,9 +67,7 @@ for table in tables:
 
         alpha = task.alpha()
 
-        #say before or after consolidation based on the type (in if statement)
         if (type == "commits"):
-            # also print in file
             with open('output/alpha.txt', 'a') as f:
                 f.write(f'Alpha between {table1} and {table2} in {len(data1)} commits computed before consolidation is {alpha:.6f}\n')
             print(f'Alpha between {table1} and {table2} in {len(data1)} commits computed before consolidation is {alpha:.6f}')
