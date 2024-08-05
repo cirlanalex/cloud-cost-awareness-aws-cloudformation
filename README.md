@@ -53,7 +53,7 @@ The supplementary material includes:
 
 ### **`scripts/`**
 
-- **`Dockerfile`**, **`docker-compose.yml`**, **`.env.example`** | Files to build and start a Docker container with a Python instance and a MariaDB instance and all necessary dependencies (see `.env.example`).
+- **`Dockerfile`**, **`docker-compose.yml`**, **`.env.example`** | Files to build and start a Docker container with a Python instance and a MariaDB instance and all necessary dependencies (see [.env.example](scripts/.env.example)).
 - **`data-collection/`** | Python Script to automate the raw data retrieval.
 - **`data-collection/src/usage/logger/logs`** | The logs provided by the Python Script.
 - **`data/`** | The necessary files to create the MariaDB instance.
@@ -69,6 +69,21 @@ Running script:
 >    1. Navigate in the "cloudformation" database
 >    2. To see the repositories that were checked you can enter the "repos" table
 >    3. To see the commits that contained relevant keywords you can enter the "commits" table
+
+### **`EXTRA/`**
+
+**Here are all extra scripts and the full database**
+
+>1. [full_database.sql](EXTRA/full_database.sql) | The database that is used for the majority of scripts inside this folder
+>2. [extract_dataset_json_from_database](EXTRA/extract_dataset_json_from_database) | Generate the file dataset.json from the database
+>    1. [.env.example](EXTRA/extract_dataset_json_from_database/.env.example) | rename to ".env" and complete with the database details and the GitHub Token
+>3. [compute_consensus_level](EXTRA/compute_consensus_level) | Compute the consensus level between each team member before consolidation and after consolidation
+>    1. [alpha.txt](EXTRA/compute_consensus_level/alpha.txt) | You can see the results in this file
+>    2. [.env.example](EXTRA/compute_consensus_level/.env.example) | rename to ".env" and complete with the database details
+>4. [generate_plots](EXTRA/generate_plots) | You can generate all plots used in the paper(AWS CF Frequency Plot + AWS CF UpSet Plot + AWS CF vs Terraform Frequency Plots + AWS CF vs Terraform UpSet Plots)
+>    1. [.env.example](EXTRA/generate_plots/.env.example) | rename to ".env" and complete with the database details
+>    2. [dataset.json](EXTRA/generate_plots/usage/dataset.json) | the Terraform dataset of commits only
+>5. [notes.md](EXTRA/notes.md) | Notes about the older version of labels
 
 ### **`dataset.json`**
 
